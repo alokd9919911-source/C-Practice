@@ -1,15 +1,14 @@
 #include <stdio.h>
-void_change_the_value_of_thirty_times(int*);
-void_change_the_value_of_thirty_times(int *a)
+int main()
 {
-    *a = *a * 30;
-
-    int main()
+    int marks[] = {90, 20, 30, 40, 50};
+    int *ptr = &marks[0];
+    for (int i = 0; i < 5; i++)
     {
-        int x = 5;
-        printf("The value of x is %d\n", x);
-        change_the_value_of_thirty_times(&x);
-        printf("The new value of x is: %u\n", *x);
-        return 0;
-    } 
+         printf("the marks are %d, %d\n", marks[i], *(ptr + i));
+
+        printf("the marks at index %d is %d", i, *ptr);
+        ptr++;
+    }
+    return 0;
 }
