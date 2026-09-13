@@ -2,8 +2,8 @@
 
 int main()
 {
-    char str[] = "Abcd";
-    for (int i = 0; i < 4; i++)
+    char str[] = "Abcde";
+    for (int i = 0; i < 5; i++)
     {
         printf(" The string id %c\n", str[i]);
     }
