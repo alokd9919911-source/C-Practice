@@ -2,10 +2,10 @@
 
 int main() {
     FILE *fptr;
-    fptr = fopen("Alok.txt", "a");
-    int num = 369;
-    fprintf(fptr, "%d", num);
-    fclose(fptr);
+    fptr = fopen("Alok.txt", "r");
+    char c = fgetc(fptr);
+    printf("%c", c);
+    // fput(fptr, c);
 
 
 
