@@ -3,10 +3,10 @@
 int main()
 {
     FILE *ptr;
-    ptr = fopen("Alok.txt", "r");
-    char c = fgetc(ptr);
-    printf("%c", c);
-
+    ptr = fopen("Alok.txt", "w");
+   // char c = fgetc(ptr);
+   // printf("%c", c);
+   fputc('c' , ptr);
 
     return 0;
 }
