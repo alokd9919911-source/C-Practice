@@ -15,7 +15,7 @@ int main() {
 
     // Computer choice
     srand(time(0));
-    computer = rand() % 3 + 1;
+    computer = rand() % 3+1;
 
     printf("Computer choice: %d\n", computer);
 
