@@ -6,11 +6,13 @@ struct employee
     int code;
     float salary;
     char name[10];
+
 };
 
 int main()
 {
     struct employee e1, e2, e3;
+
 
     printf("Enter the code of employee e1 code\n");
     scanf("%d", &e1.code);
@@ -33,6 +35,7 @@ int main()
 
     printf("Enter the name of employee e2 name\n");
     scanf("%s", e2.name);
+    
     printf("%d %f %s\n", e2.code, e2.salary, e2.name);
     printf("Enter the code of employee e3 code\n");
     scanf("%d", &e3.code);
